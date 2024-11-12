@@ -7,6 +7,7 @@ https://www.youtube.com/watch?v=HvnPeeLEVq0&t=0s
 
 
 ## How To Setup
+### Setup with `venv`
 ```
 git clone https://github.com/sajib1066/event-calendar.git
 ```
@@ -34,3 +35,11 @@ python manage.py createsuperuser
 ```
 python manage.py runserver
 ```
+
+### Set up with docker
+```
+/path/to/your/docker compose -f /Users/bohanlu/Documents/SOURCE/UZH_PROJECT/CNSP/docker-compose.yml -p cnsp up -d
+```
+
+## Run
+The server runs on `http://localhost:8000`

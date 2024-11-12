@@ -20,8 +20,9 @@ from django_ratelimit.decorators import ratelimit
 from honeypot.decorators import check_honeypot
 from cryptography.fernet import Fernet
 import bleach
+from eventcalendar import settings
 
-dbKey = (settings.DATABASE_SECURITY_KEY).encode()
+dbKey = settings.DATABASE_SECURITY_KEY.encode()
 fernet = Fernet(dbKey)
 
 
